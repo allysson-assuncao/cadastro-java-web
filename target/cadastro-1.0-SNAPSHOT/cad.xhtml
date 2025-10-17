@@ -4,21 +4,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
 -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core" >
     <h:head>
         <title>TODO supply a title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </h:head>
     <h:body>
-        <h:outputLabel>#{cadastro.mensagem}</h:outputLabel><br/>
-        <h:outputLabel>Nome</h:outputLabel><br/>
-        <h:inputText value="#{cadastro.dadosAluno.nome}">#{cadastro.mensagem}</h:inputText><br/>
-        <h:outputLabel>CPF</h:outputLabel><br/>
-        <h:inputText value="#{cadastro.dadosAluno.cpf}">#{cadastro.mensagem}</h:inputText><br/>
-        <h:outputLabel>Endereco</h:outputLabel><br/>
-        <h:inputText value="#{cadastro.dadosAluno.endereco}">#{cadastro.mensagem}</h:inputText><br/>
-        <h:outputLabel>Email</h:outputLabel><br/>
-        <h:inputText value="#{cadastro.dadosAluno.email}">#{cadastro.mensagem}</h:inputText><br/>
-        <h:commandButton value="Cadastrar Aluno" actionListener="#{cadastro.cadastrarAluno()}"/>
+        <h:outputLabel>#{cadastro.mensagem} </h:outputLabel><br/>
+        <h:outputLabel>Nome:</h:outputLabel>
+        <h:inputText value="#{cadastro.dadosAluno.nome}"/><br/><!-- comment -->
+        <h:outputLabel>CPF:</h:outputLabel>
+        <h:inputText value="#{cadastro.dadosAluno.cpf}"/><br/>
+        <h:outputLabel>Endereco:</h:outputLabel>
+        <h:inputText value="#{cadastro.dadosAluno.endereco}"/><br/>
+        <h:outputLabel>Email</h:outputLabel>
+        <h:inputText value="#{cadastro.dadosAluno.email}"/><br/>
+        <h:commandButton value="Cadastrar Aluno" action="#{cadastro.cadastrarAluno()}"/>
     </h:body>
 </html>
